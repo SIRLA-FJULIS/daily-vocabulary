@@ -3,17 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
-
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"> -->
+	<title>每日單字登入系統</title>
 </head>
 <body>
-		<h1>Login</h1>
-
+	<div class="system_name">
+        	<h2>每日單字登入系統</h2>
+	</div>
+	
+	<div class="login">
+		<h3>登入 Login</h3>
 		<form action="./lib/authenticate.php" method="post">
-			<input type="text" name="username" placeholder="Username" id="username" required>
-			<input type="password" name="password" placeholder="Password" id="password" required>
-			<input type="submit" value="Login">
+			<label for="username">帳號：</label><br>
+                	<input type="text" id="username" name="username" required><br>
+                	<label for="password">密碼：</label><br>
+        	        <input type="password" id="password" name="password" required><br>
+	                <input type="submit" value="登入" class="submit">
 		</form>
+	</div>
 </body>
 </html>
