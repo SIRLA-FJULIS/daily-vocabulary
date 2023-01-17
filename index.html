@@ -2,60 +2,61 @@
 <html lang="zh-Hant-TW">
 <head>
     <meta charset="utf-8" />
-    <title>每日單字首頁</title>
+    <title>每日單字</title>
 </head>
+
 <!-- 本頁面中使用的style再麻煩負責css的同學修改在.css內再從header引入 -->
-<body>
-    <div class="header">
-        <a href="./index.html"><img id="icon" src="images/icon.png" style="width: 100px;height: 100px;"></a>
-        <img id="header-image" src="images/header.png" style="position: absolute; height: 100px;">
-    </div>
+    <body>
+        <header class="header">
+            <a href="./index.html"><img id="icon" src="images/icon.png" style="width: 100px;height: 100px;"></a>
+            <img id="header-image" src="images/header.png" style="position: absolute; height: 100px;">
+        </header>
 
-    <!-- 單字組件 -->
-    <div class="slides-vocabulary-container">
-        <!-- 重複vocabulary-slide的class製作輪播效果 -->
-        <div class="vocabulary-slide" id="voca-1" style="margin: 100px;">
-            <!-- 嵌入單字 -->
-            <div class="vocabulary">
-                <h1>Apple</h1>
+        <!-- 單字組件 -->
+        <main class="slides-vocabulary-container">
+            <!-- 重複vocabulary-slide的class製作輪播效果 -->
+            <div class="vocabulary-slide" id="voca-1" style="margin: 100px;">
+                <!-- 嵌入單字 -->
+                <div class="vocabulary">
+                    <h1>Apple</h1>
+                </div>
+                <!-- 嵌入詞性 -->
+                <div class="part-of-speech">
+                    <h2>(n.)</h2>
+                </div>
+                <!-- 嵌入翻譯 -->
+                <div class="translate" >
+                    <p>蘋果</p>
+                </div>
             </div>
-            <!-- 嵌入詞性 -->
-            <div class="part-of-speech">
-                <h2>(n.)</h2>
+            <div class="vocabulary-slide" id="voca-2" style="margin: 100px;">
+                <!-- 嵌入單字 -->
+                <div class="vocabulary">
+                    <h1>Banana</h1>
+                </div>
+                <!-- 嵌入詞性 -->
+                <div class="part-of-speech">
+                    <h2>(n.)</h2>
+                </div>
+                <!-- 嵌入翻譯 -->
+                <div class="translate" >
+                    <p>香蕉</p>
+                </div>
             </div>
-            <!-- 嵌入翻譯 -->
-            <div class="translate" >
-                <p>蘋果</p>
-            </div>
-        </div>
-        <div class="vocabulary-slide" id="voca-2" style="margin: 100px;">
-            <!-- 嵌入單字 -->
-            <div class="vocabulary">
-                <h1>Banana</h1>
-            </div>
-            <!-- 嵌入詞性 -->
-            <div class="part-of-speech">
-                <h2>(n.)</h2>
-            </div>
-            <!-- 嵌入翻譯 -->
-            <div class="translate" >
-                <p>香蕉</p>
-            </div>
-        </div>
 
-    </div>
+        </main>
 
-    <!-- 日期選擇功能 -->
-        <label for="search-date">搜尋日期</label>
-        <input type="date" id="search-date" value="2023-02-13" min="2023-01-01">
+        <!-- 日期選擇功能 -->
+            <label for="search-date">搜尋日期</label>
+            <input type="date" id="search-date" value="2023-02-13" min="2023-01-01">
 
-    <!--footer-->
-    <footer class="footer" style="text-align: right; height: 40px; margin: 20px; padding-top: 20px;"> 
-        <ol>
-            <ul>
-            © <a href="https://sirla-fjulis.github.io/">SIRLA 讀書會 <img src="images/SIRLA_Logo_Text.png" style="width: 20px; height: 20px; vertical-align:center;"></a></ul>
-            <ul><a href="https://www.facebook.com/sirla.fjulis/">SIRLA FACEBOOK<img src="images/SIRLA_Logo.png" style="width:20px; height:20 px;"></a></ul>
-        </ol>
-    </footer>
-</body>
+        <!--footer-->
+        <footer class="footer" style="text-align: right; height: 40px; margin: 20px; padding-top: 20px;"> 
+            <ol>
+                <ul>
+                © <a href="https://sirla-fjulis.github.io/">SIRLA 讀書會 <img src="images/SIRLA_Logo_Text.png" style="width: 20px; height: 20px; vertical-align:center;"></a></ul>
+                <ul><a href="https://www.facebook.com/sirla.fjulis/">SIRLA FACEBOOK<img src="images/SIRLA_Logo.png" style="width:20px; height:20 px;"></a></ul>
+            </ol>
+        </footer>
+    </body>
 </html>
