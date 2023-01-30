@@ -1,6 +1,8 @@
 <?php 
 	require("./lib/dashboard.php");
 	require("./lib/logout.php");
+	require("./lib/action_voc.php");
+	require("./lib/search_voc.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +22,17 @@
 
 	<div class="voc_list">單字清單</div>
 
-	<input type="text" id="search_voc" name="search_voc" placeholder="請輸入單字">
-	<input type="submit" value="查詢" class="submit">
-	<button type="button" class="new_voc" id="new_voc">新增單字</button>
+	<form action="./lib/insert_voc.php" method="POST">
+		<input type="text" name="voc_eng" id="voc_eng" placeholder="請輸入 英文單字">
+		<input type="text" name="voc_chi" id="voc_chi" placeholder="請輸入 中文翻譯">
+		<input type="text" name="part_of_speech" id="part_of_speech" placeholder="請輸入 單字詞性">
+		<input type="submit" value="新增單字" class="new_voc" id="new_voc">
+	</form>
+
+	<form action="./lib/search_voc.php" method="POST">
+		<input type="text" name="keyword_search" id="keyword_search" placeholder="請輸入 英文單字/中文翻譯">
+		<input type="submit" value="單字查詢" class="submit">
+	</form>
 
 	<table class="voc_edit_table">
 		<thead>
