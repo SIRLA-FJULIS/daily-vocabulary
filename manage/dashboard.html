@@ -21,25 +21,20 @@
 	</nav>
 
 	<div class="voc_list">單字清單</div>
-
-	<form action="./lib/insert_voc.php" method="POST">
-		<input type="text" name="voc_eng" id="voc_eng" placeholder="請輸入 英文單字">
-		<input type="text" name="voc_chi" id="voc_chi" placeholder="請輸入 中文翻譯">
-		<input type="text" name="part_of_speech" id="part_of_speech" placeholder="請輸入 單字詞性">
-		<input type="submit" value="新增單字" class="new_voc" id="new_voc">
-	</form>
-
+	
 	<form action="./lib/search_voc.php" method="POST">
 		<input type="text" name="keyword_search" id="keyword_search" placeholder="請輸入 英文單字/中文翻譯">
 		<input type="submit" value="單字查詢" class="submit">
 	</form>
+	
+	<button type="button" class="tb_btn" id="tb_btn_new">新增單字</button>
 
 	<table class="voc_edit_table">
 		<thead>
 			<tr class="voc_edit_th">
 				<th>英文單字</th>
 				<th>中文翻譯</th>
-				<th>編輯	</th>
+				<th>編輯</th>
 			</tr>
 		</thead>
 		<tbody>
