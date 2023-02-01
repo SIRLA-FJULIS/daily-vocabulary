@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>每日單字</title>
+    <link rel="stylesheet" type="text/css" href="./css/flip_card.css">
 </head>
     <!-- 本頁面中使用的style再麻煩負責css的同學自行修改於.css內，再從head引入 -->
     <body>
@@ -16,6 +17,30 @@
             <marquee><img id="header-image" src="images/header.png" style="height: 100px;"></marquee>
         </header>-->
 
+		<div id="cardContainer">
+			<button id="prevBtn">Prev</button>
+			<div class="card">
+				<div class="front">
+					<div class="title">Apple</div>
+					<div class="part-of-speech">(n.)</div>
+				</div>
+				<div class="back">
+					<div class="title">蘋果</div>
+					<div class="part-of-speech">(名詞)</div>
+				</div>
+				</div>
+				<div class="card">
+				<div class="front">
+					<div class="title">Banana</div>
+					<div class="part-of-speech">(n.)</div>
+				</div>
+				<div class="back">
+					<div class="title">香蕉</div>
+					<div class="part-of-speech">(名詞)</div>
+				</div>
+			</div>
+			<button id="nextBtn">Next</button>
+		</div>
         <!-- 單字組件 -->
         <main class="slides-vocabulary-container">
             <!-- 重複vocabulary-slide的class製作輪播效果 -->
@@ -64,4 +89,5 @@
             </ol>
         </footer>
     </body>
+    <script src="./js/flip_card.js"></script>
 </html>
