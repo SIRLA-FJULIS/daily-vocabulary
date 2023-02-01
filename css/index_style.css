@@ -1,0 +1,101 @@
+/* please go to "google font" to find fonts*/
+
+/*vocab font*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); 
+/*pos font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/*translatefont*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+body{
+	/*background-color: rgb(255, 212, 128);*/
+}
+
+.background {
+	background: grey;
+	//background-image: ;
+}
+
+/*
+	Header
+*/
+#icon {
+	width: 100px;
+	height: 100px;
+}
+#header-image {
+	position: absolute;
+	height: 100px;
+}
+
+/*
+	Vocabulary 
+*/
+.slides-vocabulary-container{
+	border-style: dashed;
+	border-radius: 30px;
+	background-color: rgb(175, 175, 175);
+	color: white;
+}
+.vocabulary-slide{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -10px;
+}
+.vocabulary{
+	color: rgb(255, 204, 0);
+	font-size: 20px;
+	font-family: 'Itim', cursive;
+}
+.part-of-speech{
+	margin-top: -15px;
+	font-size: 15px;
+	font-style: italic;
+	font-family: 'Noto Sans', sans-serif;
+}
+.translate{
+	margin-top: -10px;
+	color: rgb(153, 255, 204);
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+#voca-1{
+	border-bottom:  dashed;
+}
+#voca-2 {
+	
+}
+
+/*
+	Footer
+*/
+.footer {
+	border-top: groove;
+	height: 40px;
+	text-align: right;
+	vertical-align: bottom;
+}
+.footer-logo{
+	width:20px;
+	height:20 px;"	
+}
+
+/*
+//In case of someone want to use marquee, I will write the class here 
+
+//from  class="header" --> class="mquee"
+.maquee {
+	white-space: nowrap;
+}
+//from  id="image" --> id="maquee_img"
+#maquee_img {
+	width: 100px;
+	height: 100px;
+}
+
+//from  id="header_image" --> id="maquee_header_image"
+#maquee_header_image {
+	height: 100px;
+}
+*/
