@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>新增單字</title>
+</head>
+<body>
+	<nav class="navtop">
+		<div>
+			<a href="./dashboard.html"><i class="fas fa-voc-list-alt"></i>單字清單</a>
+			<a href="./lib/logout.php"><i class="fas fa-sign-out-alt"></i>登出</a>
+		</div>
+
+	</nav>
+
+	<div class="voc_list">新增單字</div>
+
+	<form action="./lib/insert_voc.php" method="POST">
+		<input type="text" name="voc_eng" id="voc_eng" placeholder="請輸入 英文單字"><br>
+		<input type="text" name="voc_chi" id="voc_chi" placeholder="請輸入 中文翻譯"><br>
+		<input type="text" name="part_of_speech" id="part_of_speech" placeholder="請輸入 單字詞性"><br>
+		<input type="submit" value="新增單字" class="new_voc" id="new_voc">
+	</form>
+</body>
+</html>
