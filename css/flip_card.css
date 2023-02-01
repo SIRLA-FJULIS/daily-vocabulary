@@ -1,0 +1,62 @@
+#cardContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.part-of-speech {
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.card {
+	width: 30vh;
+	height: 30vh;
+	position: relative;
+	perspective: 1000px;
+	margin: 0 20px;
+	display: none;
+}
+
+.card.active {
+	display: block;
+}
+
+.front, .back { 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	transition: transform 1s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.front {
+	background: grey;
+}
+
+.back {
+	background: silver;
+	transform: rotateX(180deg);
+}
+
+.flipped .front {
+	transform: rotateX(180deg);
+}
+
+.flipped .back {
+	transform: rotateX(0deg);
+}
+button {
+	display: inline-block;
+	margin: 20px;
+}
+
