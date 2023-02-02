@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
 
 function addCard() {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'data.php', true);
+	xhr.open('GET', './manage/lib/get_all_voc.php', true);
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
 			var data = xhr.responseText.split('<br>');
