@@ -8,12 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 body{
-	/*background-color: rgb(255, 212, 128);*/
+	background-color: rgb(171, 194, 112);
 }
 
 .background {
-	background: grey;
-	//background-image: ;
+	
 }
 
 /*
@@ -32,9 +31,12 @@ body{
 	Vocabulary 
 */
 .slides-vocabulary-container{
+	margin-top: 30px;
+	margin-left: 30%;
+	margin-right: 30%;
 	border-style: dashed;
 	border-radius: 30px;
-	background-color: rgb(175, 175, 175);
+	background-color: rgb(253, 167, 105);
 	color: white;
 }
 .vocabulary-slide{
@@ -43,7 +45,7 @@ body{
 	margin-top: -10px;
 }
 .vocabulary{
-	color: rgb(255, 204, 0);
+	color: rgb(71, 60, 51);
 	font-size: 20px;
 	font-family: 'Itim', cursive;
 }
@@ -78,7 +80,7 @@ body{
 }
 .footer-logo{
 	width:20px;
-	height:20 px;"	
+	height:20 px;
 }
 
 /*

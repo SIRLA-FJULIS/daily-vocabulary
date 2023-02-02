@@ -1,16 +1,26 @@
+/*vocab font <-- same as index_css*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); 
+
+/*pos font  <-- same as index_css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 #cardContainer {
+	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 }
 
 .title {
-	font-size: 20px;
+	color: rgb(71, 60, 51);
+	font-size: 30px;
 	font-weight: bold;
+	font-family: 'Itim', cursive;
 }
 
 #part-of-speech {
 	font-size: 14px;
 	font-weight: lighter;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .card {
@@ -24,6 +34,7 @@
 
 .card.active {
 	display: block;
+	border-radius: 30px;
 }
 
 .front, .back { 
@@ -36,15 +47,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 20px;
 }
 
-
 .front {
-	background: grey;
+	background: rgb(253, 238, 220);
 }
 
 .back {
-	background: silver;
+	background: rgb(255, 216, 169);
 	transform: rotateX(180deg);
 }
 
@@ -55,8 +66,28 @@
 .flipped .back {
 	transform: rotateX(0deg);
 }
+
 button {
-	display: inline-block;
 	margin: 20px;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size:  16px;
+	cursor: pointer;
+}
+#prevBtn{
+	background: url('../images/icon/arrow_backward.png');
+	background-position-y: 25%;
+	background-position-x: 125%;
+	background-repeat: no-repeat;
+}
+#nextBtn{
+	background: url('../images/icon/arrow_forward.png');
+	background-position-y: 25%;
+	background-position-x: 75%;
+	background-repeat: no-repeat;
 }
 
+button:hover {
+	
+}
