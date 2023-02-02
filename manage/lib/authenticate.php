@@ -29,7 +29,7 @@
 				$_SESSION['name'] = $_POST['username'];
 				$_SESSION['id'] = $id;
 
-				header('Location: ../dashboard.html');
+				header('Location: ../choose_function.html');
 			} else {
 				echo 'Incorrect username and/or password!';
 			}
