@@ -23,8 +23,10 @@
 
 	// Check if the query is successful
         if(mysqli_query($con, $sql)){
-		echo "<p>Vocabulary stored in a database successfully!</p>
-		      <p>$search_voc\n$voc_chi\n$part_of_speech</p>";
+			echo "<script>
+				window.alert('單字[  $voc_eng  $voc_chi  $part_of_speech  ]新增完成');
+				window.location.href = ' ../dashboard.html' 
+				</script>";
 	} else {
         	echo "ERROR: Hush! Sorry $sql. " . mysqli_error($con);
         }
