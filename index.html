@@ -5,62 +5,50 @@
     <title>每日單字</title>
     <link rel="stylesheet" type="text/css" href="./css/flip_card.css">
 </head>
-    <!-- 本頁面中使用的style再麻煩負責css的同學自行修改於.css內，再從head引入 -->
     <body>
         <header class="header">
             <a href="./index.html"><img id="icon" src="images/icon.png" style="width: 100px;height: 100px;"></a>
             <img id="header-image" src="images/header.png" style="position: absolute; height: 100px;">
         </header>
-        <!--之前試過讓header-image做跑馬燈，但 html 的 tag <marquee> 但做出來效果有限，如果可以用 css 和 javaSctipt 協助動畫控制應該能做出首尾相連的圖片跑馬燈，寫法如下-->
-        <!--<header class="header" style="white-space: nowrap;">
-            <a href="./index.html"><img id="icon" src="images/icon.png" style="width: 100px;height: 100px;"></a>
-            <marquee><img id="header-image" src="images/header.png" style="height: 100px;"></marquee>
-        </header>-->
 
 		<div id="cardContainer">
 			<button id="prevBtn">Prev</button>
 			<button id="nextBtn">Next</button>
 		</div>
-        <!-- 單字組件 -->
+        
         <main class="slides-vocabulary-container">
-            <!-- 重複vocabulary-slide的class製作輪播效果 -->
             <div class="vocabulary-slide" id="voca-1" style="margin: 100px;">
-                <!-- 嵌入單字 -->
+                
                 <div class="vocabulary">
                     <h1>Apple</h1>
                 </div>
-                <!-- 嵌入詞性 -->
+                
                 <div class="part-of-speech">
                     <h2>(n.)</h2>
                 </div>
-                <!-- 嵌入翻譯 -->
+                
                 <div class="translate" >
                     <p>蘋果</p>
                 </div>
             </div>
             
             <div class="vocabulary-slide" id="voca-2" style="margin: 100px;">
-                <!-- 嵌入單字 -->
+                
                 <div class="vocabulary">
                     <h1>Banana</h1>
                 </div>
-                <!-- 嵌入詞性 -->
+                
                 <div class="part-of-speech">
                     <h2>(n.)</h2>
                 </div>
-                <!-- 嵌入翻譯 -->
+                
                 <div class="translate" >
                     <p>香蕉</p>
                 </div>
             </div>
 
         </main>
-
-        <!-- 日期選擇功能 -->
-            <label for="search-date">搜尋日期</label>
-            <input type="date" id="search-date" value="2023-02-13" min="2023-01-01">
-
-        <!--footer-->
+        
         <footer class="footer" style="text-align: right; height: 40px; margin: 20px; padding-top: 20px;"> 
             <ol>
                 <ul>
