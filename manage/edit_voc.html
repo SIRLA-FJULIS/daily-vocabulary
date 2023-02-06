@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>修改單字</title>
 	<link rel="stylesheet" type="text/css" href="../css/edit_style.css">
+	<title>修改單字</title>
+	
 	<!-- include bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -16,16 +17,17 @@
 		</div>
 	</nav>
 
-	<div class="voc_list">修改單字</div>
-
-	<form action="" method="POST">
-		<label for="edit_voc_eng">英文單字：</label>
-		<input type="text" name="edit_voc_eng" id="edit_voc_eng"><br>
-		<label for="edit_voc_chi">中文翻譯：</label>
-		<input type="text" name="edit_voc_chi" id="edit_voc_chi"><br>
-		<label for="edit_part_of_speech">單字詞性：</label>
-		<input type="text" name="edit_part_of_speech" id="edit_part_of_speech"><br>
-		<input type="submit" value="修改" class="edit_voc" id="edit_voc">
-	</form>
+	<div class="voc_list">
+		<p class="title">修改單字</p>
+		<form action="" method="POST"  class="content">
+			<label for="edit_voc_eng" class="field">英文單字：</label>
+				<input type="text" name="edit_voc_eng" id="edit_voc_eng"><br>
+			<label for="edit_voc_chi" class="field">中文翻譯：</label>
+				<input type="text" name="edit_voc_chi" id="edit_voc_chi"><br>
+			<label for="edit_part_of_speech" class="field">單字詞性：</label>
+				<input type="text" name="edit_part_of_speech" id="edit_part_of_speech"><br>
+			<input type="submit" value="修改" class="edit_voc" id="edit_voc">
+		</form>
+	</div>
 </body>
 </html>
