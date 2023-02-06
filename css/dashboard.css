@@ -1,95 +1,103 @@
-		body{
-        	color: #3B3B3B;	
-		}
-		.navtop{
-			background-color: #edc041;
-			height: 50px;
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			padding: 0 20px;
-			font-weight: bold;
-		}
-		.navtop a{
-			color: white;
-			margin-right: 20px;
-			text-decoration: none;
-		}
-		.voc_list{
-			font-size: 35px;
-			font-weight: bold;		
-			margin: 20px 0;
-			text-align: center;
-		}
+body{
+	color: #3B3B3B;	
+}
+.navtop{
+	background-color: #edc041;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 20px;
+	font-weight: bold;
+}
 
-		form{
-			display: flex;
-			justify-content: center;
-			margin: 20px 0;
-			float: left;
-			position: relative;
-			left: 11%;
-		}
-		input[type="text"]{
-			width: 300px;
-			height: 30px;
-			padding: 0 10px;
-			font-size: 20px;
-			border: 2px solid #3B3B3B;
-			border-radius: 5px;
-			margin-right: 10px;
-		}
-		input[type="submit"], #tb_btn_new{
-			font-size: 20px;
-			font-weight: bold;
-			width: 100px;
-			height: 36px;
-			background-color: #3B3B3B;
-			color: #fff;
-			border: 0;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		.voc_edit_table{
-			width: 80%;
-			margin: 20px auto;
-			text-align: center;
-			padding: 10px;
-			table-layout: auto;
-			}
-		.voc_edit_th{
-			background-color: #edc041;
-			color: #2B2B2B;
-			font-size: 20px;
-			font-weight: bold;
-		}
-		#tb_btn_new{
-			float: right;
-			position: relative;
-			right: 11%;
-			margin: 20px 0;
-		}
+.navtop a{
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+}
 
-		.voc_edit_tb:nth-child(odd){
-			background-color: #ddd;
-		}
-		.voc_edit_tb:nth-child(even){
-			background-color: #edc041;
-		}	
+.voc_list{
+	font-size: 35px;
+	font-weight: bold;		
+	margin: 20px 0;
+	text-align: center;
+}
 
-		#tb_eng, #tb_chi{
-			display: block;
-			padding: 10px;
-		}
+form{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+	float: left;
+	position: relative;
+	left: 11%;
+}
 
-		.tb_btn{
-			font-size: 16px;
-			font-weight: bold;
-			background-color: gray;
-			color: white;
-			border: 0;
-			cursor: pointer;			
-		}
-		.tb_btn:hover{
-			background-color: lightblue;
-		}
+input[type="text"]{
+	width: 300px;
+	height: 30px;
+	padding: 0 10px;
+	font-size: 20px;
+	border: 2px solid #3B3B3B;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+input[type="submit"], #tb_btn_new{
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+	height: 36px;
+	background-color: #3B3B3B;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.voc_edit_table{
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	padding: 10px;
+	table-layout: auto;
+}
+
+.voc_edit_th{
+	background-color: #edc041;
+	color: #2B2B2B;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tb_btn_new{
+	float: right;
+	position: relative;
+	right: 11%;
+	margin: 20px 0;
+}
+
+.voc_edit_tb:nth-child(odd){
+	background-color: #ddd;
+}
+
+.voc_edit_tb:nth-child(even){
+	background-color: #edc041;
+}	
+
+#tb_eng, #tb_chi{
+	display: block;
+	padding: 10px;
+}
+
+.tb_btn{
+	font-size: 16px;
+	font-weight: bold;
+	background-color: gray;
+	color: white;
+	border: 0;
+	cursor: pointer;			
+}
+
+.tb_btn:hover{
+	background-color: lightblue;
+}
