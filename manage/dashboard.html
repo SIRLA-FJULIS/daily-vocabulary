@@ -12,7 +12,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>單字管理</title>
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"> -->
-	<script src="../js/dashboard.js"></script>
 	<style type="text/css">
 		@import"../css/dashboard.css";
 	</style>
@@ -26,7 +25,7 @@
 
 	<div class="voc_list">單字清單</div>
 	
-	<form action="./lib/search_voc.php" method="POST">
+	<form action="./lib/search_voc.php" method="POST" onsubmit="get_voc(event)">
 		<input type="text" name="keyword_search" id="keyword_search" placeholder="請輸入 英文單字/中文翻譯">
 		<input type="submit" value="單字查詢" class="submit">
 	</form>
@@ -60,5 +59,6 @@
 			</tr>
 		</tbody>
 	</table>
+	<script src="../js/search_voc.js"></script>
 </body>
 </html>
