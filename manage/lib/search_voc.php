@@ -13,32 +13,17 @@
 	}
 
 	// Taking all values from the form data (input)
-	$keyword_search = $_REQUEST['keyword_search'];
 
+	$keyword_search = $_POST['keyword_search'];
 	// We are going to insert the data into our vocabulary table
 	$sql = 'SELECT * FROM `vocabulary` WHERE voc_eng LIKE "%' . $keyword_search . '%" OR voc_chi LIKE "%' . $keyword_search . '%";';
-	$result = mysqli_query($con, $sql) or die("Bad query: $sql");
+	$result = mysqli_query($con, $sql);
 
-	echo "<table border='1'>";
-	echo "<tr><td>英文單字</td><td>中文翻譯</td><td>單字詞性</td></tr>";
-	while ($row = mysqli_fetch_assoc($result)) {
-		echo "<tr><td>{$row["voc_eng"]}</td><td>{$row["voc_chi"]}</td><td>{$row["part_of_speech"]}</td></tr>\n";
-        }
-	echo "</table>";
-
-
-/*	// Check if the query is successful
 	if ($result->num_rows > 0) {
-		echo "英文單字、中文翻譯、單字詞性";
-		// output data of each row
-		while ($row = $result->fetch_assoc()) {
-			echo $row["voc_eng"] . "\t". $row["voc_chi"] . "\t" . $row["part_of_speech"];
-		}
-	} else {
-		echo "0 results";
-	}
-*/
-
+        while($row = $result->fetch_assoc()) {
+          echo $row["voc_eng"] . ",". $row["voc_chi"] . "," . $row["part_of_speech"] . "<br>";
+        }
+    }
 	// Close connection
         mysqli_close($con);
 ?>
