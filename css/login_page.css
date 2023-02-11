@@ -15,7 +15,6 @@ body{
 
 .login{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         width: 200px;
         height: 350px;
