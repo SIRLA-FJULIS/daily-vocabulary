@@ -8,8 +8,7 @@ body{
 
 .system_name{
         color: #3B3B3B;
-        display: flex;
-        justify-content: center;
+        text-align: center;
         font-size: 28px;
 }
 
