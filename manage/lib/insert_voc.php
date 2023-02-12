@@ -25,7 +25,7 @@
         if(mysqli_query($con, $sql)){
 			echo "<script>
 				window.alert('單字[  $voc_eng  $voc_chi  $part_of_speech  ]新增完成');
-				window.location.href = ' ../dashboard.html' 
+				window.location.href = ' ./dashboard.php' 
 				</script>";
 	} else {
         	echo "ERROR: Hush! Sorry $sql. " . mysqli_error($con);
