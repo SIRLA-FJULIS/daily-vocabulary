@@ -1,18 +1,16 @@
 body{
-	color: #3B3B3B;
-	background-color: #edc041;
-	background-image: url('icon.png');
-	background-repeat: no-repeat;
-	background-size: 80px 80px;	
-	text-align: center;	
+    color: #3B3B3B;
+    text-align: center;	
+    background-color: #edc041;
+    background-image: url('icon.png');
+    background-repeat: no-repeat;
+    background-size: 80px 80px;	
 }
 
 .navtop{
     display: flex;
     justify-content: flex-end;
-
 }
-
 a{
 	color: white;
 	font-weight: bold;
@@ -20,30 +18,26 @@ a{
 }
 
 .action_choose{
-	color: #3B3B3B;
-	display: flex;
-	justify-content: center;
-	font-size: 50px;
-	padding-top: 150px;
-	padding-bottom: 20px;
+    color: #3B3B3B;
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 #show_voc, #new_voc{
-	color: white;
-	border-style: none;
-	font-weight: bold;
-	font-size: 20px;
-	height: 40px;
-	width: 150px;
-	background-color: #3B3B3B;
-	position: relative;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    padding: 0 20px 0;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #3B3B3B;
 	cursor: pointer;            
 }
 
 #show_voc:hover, #new_voc:hover{
-	color: #3B3B3B;
-	background-color: white;
+    color: #3B3B3B;
+    background-color: white;
 }
