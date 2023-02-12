@@ -1,57 +1,59 @@
 body{
-        color: #3B3B3B;
-        background-color: #edc041;
-        background-image: url('icon.png');
-        background-repeat: no-repeat;
-        background-size: 80px 80px;
+    color: #3B3B3B;
+    background-color: #edc041;
+    background-image: url('icon.png');
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    font-family:"Microsoft JhengHei";
 }
 
 .system_name{
-        color: #3B3B3B;
-        text-align: center;
-        font-size: 28px;
+    color: #3B3B3B;
+    font-size: 28px;
+    text-align: center;
 }
 
 .login{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        height: 350px;
-        /*            title*/
-        align-items: center;
-        background-color: white;
-        margin: 30px auto;
-        border-radius: 20px;
-        padding: 10px 100px 10px 100px;
-        box-shadow: 0 0 10px gray;
+    width: 200px;
+    height: 350px;
+    margin: 30px auto;
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+/*title*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
 }
 
 h3{
-        font-size: 25px;
+    font-size: 25px;
 }
 
 #username, #password {
-        font-size: 20px;
-        height: 30px;
-        width: 200px;
-        margin: 10px auto;
-        border-style:none;
-        background-color: lightgray;
+    font-size: 20px;
+    height: 30px;
+    width: 200px;
+    margin: 10px auto;
+    border-style:none;
+    background-color: lightgray;
 }
 
 .submit{
-        color: #2B2B2B;
-        border-style:none;
-        font-weight: bold;
-        font-size: 20px;
-        height: 40px;
-        width: 80px;
-        background-color: #edc041;
-        position: relative;top: 40px;left: 60px;
-        cursor: pointer;            
+    color: #2B2B2B;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    border-style:none;
+    position: relative;
+    top: 40px;left: 60px;
+    background-color: #edc041;
+    cursor: pointer;            
 }
 
 .submit:hover{
-        background-color: #2B2B2B;
-        color: #edc041;
+    background-color: #2B2B2B;
+    color: #edc041;
 }
