@@ -1,7 +1,7 @@
 function go_to_new_voc() {
-    location.href = "new_voc.html";
+    location.href = "../manage/new_voc.html";
 }
 
 function go_to_vocsList() {
-    location.href = "dashboard.html";
+    location.href = "../manage/lib/dashboard.php";
 }

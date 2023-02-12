@@ -17,7 +17,7 @@
 	<title>單字管理</title>
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"> -->
 	<style type="text/css">
-		@import"../css/dashboard.css";
+		@import"../../css/dashboard.css";
 	</style>
 </head>
 <body class="loggedin">
@@ -30,12 +30,12 @@
 	<div class="voc_list">單字清單</div>
 	<p>Welcome back, <?=$_SESSION['name']?>!</p>
 	
-	<form action="./lib/search_voc.php" method="POST" onsubmit="get_voc(event)">
+	<form action="./search_voc.php" method="POST" onsubmit="get_voc(event)">
 		<input type="text" name="keyword_search" id="keyword_search" placeholder="請輸入 英文單字/中文翻譯">
 		<input type="submit" value="單字查詢" class="submit">
 	</form>
 	
-	<button type="button" class="tb_btn" id="tb_btn_new" onclick="go_to_new_voc()">新增單字</button>
+	<button type="button" class="tb_btn" id="tb_btn_new" onclick='location.href = "../new_voc.html";' >新增單字</button>
 
 	<table class="voc_edit_table">
 		<thead>
@@ -64,6 +64,6 @@
 			</tr>
 		</tbody>
 	</table>
-	<script src="../js/search_voc.js"></script>
+	<script src="../../js/search_voc.js"></script>
 </body>
 </html>

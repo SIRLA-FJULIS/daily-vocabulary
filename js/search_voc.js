@@ -1,7 +1,7 @@
 function get_voc(e) {
     e.preventDefault();
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', './lib/search_voc.php', true);
+    xhr.open('POST', '../lib/search_voc.php', true);
     var voc_data = [];
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
